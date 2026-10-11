@@ -1,0 +1,88 @@
+{
+  "_comment": "离线演示数据。所有价格与优惠券均为示例，仅用于让评审直接运行本工具；真实数据由麦当劳 MCP 实时返回。",
+  "store": "麦当劳（示例门店）",
+  "store_code": "DEMO001",
+  "delivery_fee": 9.0,
+  "baseline_coupon_mode": "shared",
+  "meals": [
+    {
+      "code": "BIGMAC_SET",
+      "name": "巨无霸中套餐",
+      "price": 42.0,
+      "groups": [
+        {
+          "name": "副食",
+          "choices": [
+            { "name": "中薯条", "delta": 0 },
+            { "name": "小薯条", "delta": -4 },
+            { "name": "玉米杯", "delta": 3 },
+            { "name": "麦乐鸡4块", "delta": 6 }
+          ]
+        },
+        {
+          "name": "饮品",
+          "choices": [
+            { "name": "中可乐", "delta": 0 },
+            { "name": "无糖中可乐", "delta": 0 },
+            { "name": "阳光橙", "delta": 2 }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MCCHICKEN_SET",
+      "name": "麦香鸡中套餐",
+      "price": 36.0,
+      "groups": [
+        {
+          "name": "副食",
+          "choices": [
+            { "name": "中薯条", "delta": 0 },
+            { "name": "小薯条", "delta": -4 },
+            { "name": "苹果片", "delta": -2 }
+          ]
+        },
+        {
+          "name": "饮品",
+          "choices": [
+            { "name": "中可乐", "delta": 0 },
+            { "name": "无糖中可乐", "delta": 0 },
+            { "name": "热红茶", "delta": 1 }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MCFLURRY",
+      "name": "奥利奥麦旋风",
+      "price": 13.0,
+      "groups": []
+    },
+    {
+      "code": "FRIES_L",
+      "name": "大薯条",
+      "price": 15.0,
+      "groups": []
+    },
+    {
+      "code": "COKE_M",
+      "name": "中可乐",
+      "price": 10.0,
+      "groups": []
+    }
+  ],
+  "coupons": [
+    { "code": "C30_5", "name": "满30减5", "threshold": 30, "discount": 5, "source": "my" },
+    { "code": "C60_12", "name": "满60减12", "threshold": 60, "discount": 12, "source": "my" },
+    { "code": "C100_22", "name": "满100减22", "threshold": 100, "discount": 22, "source": "store" },
+    { "code": "C140_32", "name": "满140减32", "threshold": 140, "discount": 32, "source": "store" },
+    { "code": "C190_45", "name": "满190减45", "threshold": 190, "discount": 45, "source": "maimaisheng" }
+  ],
+  "people": [
+    { "name": "我", "meals": ["BIGMAC_SET"], "allow_swap": true },
+    { "name": "小王", "meals": ["BIGMAC_SET"], "allow_swap": true },
+    { "name": "小李", "meals": ["BIGMAC_SET"], "allow_swap": true },
+    { "name": "小张", "meals": ["BIGMAC_SET"], "allow_swap": true },
+    { "name": "小赵", "meals": ["BIGMAC_SET"], "allow_swap": true }
+  ]
+}

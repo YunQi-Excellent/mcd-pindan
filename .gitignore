@@ -1,0 +1,20 @@
+# 本地环境变量（切勿提交真实 Token）
+.env
+.env.local
+
+# 真实 MCP 抓取数据（可能含个人账户信息：地址、订单、积分、券）
+data/live/
+*.live.json
+input.local.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/
